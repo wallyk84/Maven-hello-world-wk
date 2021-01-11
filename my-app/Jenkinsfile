@@ -1,0 +1,9 @@
+node{
+    stage('SCM Checkout'){
+        git 'https://github.com/wallyk84/Maven-hello-world-wk'
+    }
+    stage('Compile-Package'){
+        sh 'mvn package'
+    }
+
+}
